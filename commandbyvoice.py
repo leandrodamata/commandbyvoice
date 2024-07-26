@@ -42,9 +42,5 @@ def ouvir_microfone():
     return frase
 
 
-# Execução principal
 frase = ouvir_microfone()
-if frase:
-    cria_audio(frase)
-else:
-    print("Nenhuma frase foi reconhecida.")
+cria_audio(frase)
